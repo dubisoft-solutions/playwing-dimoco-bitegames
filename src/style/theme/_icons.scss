@@ -26,6 +26,8 @@ $font-icons-family-name: "IconsFont";
 }
 
 $icon-name-checkbox: "\E001"; 
+$icon-name-minus: "\E002"; 
+$icon-name-plus: "\E003"; 
 
 
 @function icon-char($filename) {
@@ -33,6 +35,12 @@ $icon-name-checkbox: "\E001";
 
 	@if $filename == checkbox {
 		$char: "\E001";
+	}
+	@if $filename == minus {
+		$char: "\E002";
+	}
+	@if $filename == plus {
+		$char: "\E003";
 	}
 
 	@return $char;
@@ -51,4 +59,10 @@ $icon-name-checkbox: "\E001";
 
 .icon-checkbox {
 	@include icon(checkbox);
+}
+.icon-minus {
+	@include icon(minus);
+}
+.icon-plus {
+	@include icon(plus);
 }
