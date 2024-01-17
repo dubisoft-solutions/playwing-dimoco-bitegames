@@ -1,0 +1,35 @@
+.form-label {
+    font-weight: 500;
+    font-size: 1rem;
+    color: $white;
+}
+
+.form-control {
+    font-weight: 500;
+    font-size: .875rem;
+    font-style: italic;
+    color: $dark-grey;
+    text-transform: uppercase;
+    padding: .9125rem 1rem;
+    border-radius: .188rem;
+    border: none;
+    margin-bottom: .875rem;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    outline: 0;
+     ::placeholder {
+        color: $dark-grey;
+        font-style: italic;
+        text-align: center;
+        text-transform: uppercase;
+    }
+     :focus,
+     :hover,
+     :active {
+        outline: 0;
+        outline-offset: 0;
+        box-shadow: none;
+        border: none;
+    }
+}

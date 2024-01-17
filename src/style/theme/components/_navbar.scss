@@ -1,0 +1,15 @@
+.navbar {
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: .5rem 0;
+        position: relative;
+        z-index: 1;
+        list-style-type: none;
+    }
+    .navbar-brand-img {
+        width: 4.625rem;
+    }
+}
