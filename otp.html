@@ -41,7 +41,8 @@
                 <p class="form-label fw-bold mb-2">Wprowadż swój numer telefonu:</p>
 
                 <form method="get" action="pin.html">
-                    <input type="tel" class="form-control" id="inputPhone" placeholder="XXXXXXXXX">
+                    <input type="tel" data-inputmask=" 'mask' : '999999999'" class="form-control pin-input" id="inputPhone" placeholder="XXXXXXXXX" value="">
+
                     <button type="submit" class="btn btn-success btn-block join-button">Dalej</button>
                 </form>
 
