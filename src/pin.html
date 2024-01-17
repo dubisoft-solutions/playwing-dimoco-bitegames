@@ -15,7 +15,8 @@
             <div class="container">
                 <p class="form-label mb-2"><span class="fw-bold">Playwing LTD</span> <br> Podaj numer PIN otrzymany SMSem:</p>
                 <form method="get" action="success.html">
-                    <input type="text" class="form-control" id="inputPin" placeholder="xxxx">
+                    <input type="tel" data-inputmask=" 'mask' : '9999'" class="form-control pin-input" id="inputPin" placeholder="xxxx" value="">
+
                     <button type="submit" class="btn btn-success btn-block join-button">Dalej</button>
                 </form>
 
