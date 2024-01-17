@@ -12,7 +12,7 @@ var path = {
     },
     src: {
         html: "./src/*.html",
-        js: ["./src/js/main.js", "./src/js/markup-controller.js"],
+        js: ["./src/js/main.js"],
         style: "./src/style/main.scss",
         fontIcons: "./src/font_icons/icons/*.svg",
         img: [
@@ -44,18 +44,18 @@ var config = {
 /* Gulp config */
 const sass = require('gulp-sass')(require('sass'));
 const gulp = require("gulp"),
-      minify = require("gulp-minify"),
-      webserver = require("browser-sync"),
-      plumber = require("gulp-plumber"),
-      rigger = require("gulp-rigger"),
-      sourcemaps = require("gulp-sourcemaps"),
-      autoprefixer = require("gulp-autoprefixer"),
-      cleanCSS = require("gulp-clean-css"),
-      cache = require("gulp-cache"),
-      rimraf = require("gulp-rimraf"),
-      iconfont = require('gulp-iconfont'),
-      iconfontCss = require('gulp-iconfont-css'),
-      rename = require("gulp-rename");
+    minify = require("gulp-minify"),
+    webserver = require("browser-sync"),
+    plumber = require("gulp-plumber"),
+    rigger = require("gulp-rigger"),
+    sourcemaps = require("gulp-sourcemaps"),
+    autoprefixer = require("gulp-autoprefixer"),
+    cleanCSS = require("gulp-clean-css"),
+    cache = require("gulp-cache"),
+    rimraf = require("gulp-rimraf"),
+    iconfont = require('gulp-iconfont'),
+    iconfontCss = require('gulp-iconfont-css'),
+    rename = require("gulp-rename");
 
 /* Main tasks */
 
@@ -71,7 +71,7 @@ gulp.task("webserver", function() {
  */
 gulp.task("html:build", function() {
     return gulp
-        .src(path.src.html) 
+        .src(path.src.html)
         .pipe(plumber())
         .pipe(rigger())
         .pipe(gulp.dest(path.build.html))
@@ -81,7 +81,7 @@ gulp.task("html:build", function() {
 /**
  * Builds the svg icons to font
  */
- gulp.task('fonticons:build', function() {
+gulp.task('fonticons:build', function() {
     const fontName = 'IconsFont';
     return gulp.src([path.src.fontIcons])
         .pipe(iconfontCss({
@@ -104,9 +104,9 @@ gulp.task("html:build", function() {
 /**
  * Build styles
  */
- gulp.task("css:build-ltr", function() {
+gulp.task("css:build-ltr", function() {
     return gulp
-        .src(path.src.style) 
+        .src(path.src.style)
         .pipe(sourcemaps.init())
         .pipe(plumber())
         .pipe(sass({

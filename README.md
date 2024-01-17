@@ -1,8 +1,8 @@
-### Dimoco The KIOSK store Markup project ###
+### Dimoco The Bitegames store Markup project ###
 
 Markup project created by figma design.
 
-Demo link [url](https://dubisoft-solutions.github.io/playwing-sports-store/ "Demo project link")
+Demo link [url](https://dubisoft-solutions.github.io/playwing-dimoco-bitegames "Demo project link")
 
 ## Project structure ##
 
