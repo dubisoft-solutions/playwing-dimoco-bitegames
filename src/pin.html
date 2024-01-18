@@ -17,7 +17,7 @@
                     <div class="col-12">
                         <p class="fw-bold mb-2">Playwing LTD<br> Podaj numer PIN otrzymany SMSem:</p>
                         <form method="get" action="success.html" class="needs-validation" novalidate>
-                            <input type="tel" class="form-control text-center mb-3" id="inputPin" placeholder="xxxx" required>
+                            <input type="text" pattern="[0-9]*" class="form-control text-center mb-3" id="inputPin" placeholder="xxxx" minlength="4" maxlength="4" required>
 
                             <div class="d-grid mb-1">
                                 <button type="submit" class="btn btn-success join-button">Dalej</button>
