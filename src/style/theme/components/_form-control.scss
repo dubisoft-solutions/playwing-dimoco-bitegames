@@ -25,6 +25,7 @@
 .was-validated .form-control:valid {
     border-color: transparent;
     background-image: none;
+    padding-right: 1rem;
 }
 
 .form-control.is-invalid:focus,
