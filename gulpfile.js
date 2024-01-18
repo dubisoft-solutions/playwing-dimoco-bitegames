@@ -55,7 +55,8 @@ const gulp = require("gulp"),
     rimraf = require("gulp-rimraf"),
     iconfont = require('gulp-iconfont'),
     iconfontCss = require('gulp-iconfont-css'),
-    rename = require("gulp-rename");
+    rename = require("gulp-rename"),
+    rtlcss = require('gulp-rtlcss');
 
 /* Main tasks */
 
@@ -122,7 +123,27 @@ gulp.task("css:build-ltr", function() {
         .pipe(gulp.dest(path.build.css));
 });
 
-gulp.task("css:build", gulp.series(gulp.parallel("css:build-ltr")));
+gulp.task("css:build-rtl", function() {
+    return gulp
+        .src(path.src.style)
+        .pipe(sourcemaps.init())
+        .pipe(plumber())
+        .pipe(sass({
+            includePaths: [
+                './node_modules',
+            ]
+        })) // scss -> css
+        .pipe(rtlcss())
+        .pipe(rename({ suffix: ".rtl" }))
+        .pipe(gulp.dest(path.build.css))
+        .pipe(rename({ suffix: ".min" }))
+        .pipe(cleanCSS())
+        .pipe(sourcemaps.write("./"))
+        .pipe(gulp.dest(path.build.css))
+        .pipe(webserver.reload({ stream: true }));
+});
+
+gulp.task("css:build", gulp.series(gulp.parallel("css:build-ltr", "css:build-rtl")));
 
 
 /**
