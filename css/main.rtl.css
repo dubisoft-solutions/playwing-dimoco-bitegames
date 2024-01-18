@@ -12001,6 +12001,7 @@ body {
 a {
   text-decoration: underline;
   cursor: pointer;
+  color: #FFFFFF;
 }
 
 textarea {
@@ -12111,6 +12112,9 @@ p {
   font-weight: 500;
   font-size: 0.75rem;
   color: #FFFFFF;
+}
+.main .footer .list-inline .list-inline-item .btn-link:hover {
+  color: #00B262;
 }
 .main .footer .list-inline .list-inline-item:last-child {
   border-left: none;
