@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports store</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="index">
+    <main class="main">
+        <!-- Header -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <ul class="navbar-nav d-flex flex-row justify-content-between align-items-center w-100">
+                        <li>
+                            <a class="navbar-brand me-0" href="index.html">
+                                <img src="img/logo-plus.svg" class="navbar-brand-img" alt="Plus">
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a class="navbar-brand me-0" href="index.html">
+                                <img src="img/logo-bitegames.svg" class="navbar-brand-img" alt="Bitegames">
+                            </a>
+                        </li>
+        
+                        <li class="mw-64"></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Main section -->
+        <section class="hero pt-4 pb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-12">
+                        <p class="mb-4">
+                            Do you have any issue on Bite Games store? We will give you straight answers! <br> Contact us using our contact form below
+                        </p>
+
+                        <form id="contactUsForm" class="row needs-validation" novalidate>
+                            <div class="col-12 col-lg-6 mb-3 text-start">
+                                <label for="inputEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="inputEmail" required>
+                                <div class="invalid-tooltip">
+                                    Please enter a valid email address *
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3 text-start">
+                                <label for="inputPhone" class="form-label">Phone number</label>
+                                <input type="tel" class="form-control" id="inputPhone" placeholder="+201XXXXXXXXX" required>
+                                <div class="invalid-tooltip">
+                                    Please enter a valid phone number *
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 mb-3 text-start">
+                                <label for="selectIssue" class="form-label">Select issue</label>
+                                <select class="form-control" required>
+                                        <option value selected="selected">- - -</option> <!-- placeholder -->
+                                        <option value="Download or Installation issues">مشاكل التنزيل أو التثبيت</option> 
+                                        <option value="Crash / Freeze / Loading issues">مشاكل التعطل / التجميد / التحميل</option>
+                                        <option value="Gameplay issues">قضايا اللعب</option>
+                                        <option value="Questions / Suggestions / Feedback">أسئلة / اقتراحات / ملاحظات</option>
+                                        <option value="Subscription / Unsubscription issues">قضايا الاشتراك / إلغاء الاشتراك</option>
+                                        <option value="Service unavailability">عدم توفر الخدمة</option>
+                                        <option value="Other">آخر</option>
+                                      </select>
+                                <div class="invalid-tooltip">
+                                    Please enter a valid issue *
+                                </div>
+                            </div>
+
+                            <div class="col-12 mb-4 text-start">
+                                <label for="textareaMessage" class="form-label">Comments</label>
+                                <textarea class="form-control" id="textareaMessage" rows="4" required></textarea>
+                                <div class="invalid-tooltip">
+                                    Please enter a valid comments *
+                                </div>
+                            </div>
+
+                            <div class="col-12 mb-4">
+                                <div class="grecaptcha recaptcha-style" required></div>
+                            </div>
+
+                            <div class="col-8 text-center mx-auto my-5">
+                                <button type="submit" class="btn btn-success w-100">Send</button>
+                            </div>
+
+                            <div class="col-12 col-lg-6 mb-3 text-center">
+                                <label for="inputUser" class="form-label">User:</label>
+                                <div class="bg-dark rounded-1 text-center p-3">
+                                    <a class="btn-link text-success" data-bs-toggle="modal" data-bs-target="#liveSubscription"><i class="cs-icons-copy text-pink font-size-14px pe-4"></i> Wi-Fi User not detected</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <ul class="list-inline mb-3">
+                            <li class="list-inline-item">
+                                <a href="contact.html" class="btn-link">Kontakt</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="faq.html" class="btn-link">FAQ</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="terms.html" class="btn-link">Zasady | Warunki</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-link">Wydawca</a>
+                            </li>
+                        </ul>
+                        <p>© Bitegames 2023 Wszelkie prawa zastrzeżone</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+<script src="js/main.js"></script>
+
+</html>
