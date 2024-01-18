@@ -2133,7 +2133,7 @@ progress {
   appearance: none;
   background-color: #FFFFFF;
   background-clip: padding-box;
-  border: var(--bs-border-width) solid var(--bs-border-color);
+  border: var(--bs-border-width) solid #FFFFFF;
   border-radius: 0.188rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2286,7 +2286,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: left 1rem center;
   background-size: 16px 12px;
-  border: var(--bs-border-width) solid var(--bs-border-color);
+  border: var(--bs-border-width) solid #FFFFFF;
   border-radius: 0.188rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2672,7 +2672,7 @@ textarea.form-control-lg {
   text-align: center;
   white-space: nowrap;
   background-color: var(--bs-tertiary-bg);
-  border: var(--bs-border-width) solid var(--bs-border-color);
+  border: var(--bs-border-width) solid #FFFFFF;
   border-radius: 0.188rem;
 }
 
@@ -11868,9 +11868,6 @@ textarea.form-control-lg {
   --bs-btn-hover-color: #00B262;
 }
 
-.form-control {
-  border: none;
-}
 .form-control::placeholder {
   font-weight: 400;
   font-style: italic;
@@ -11879,15 +11876,6 @@ textarea.form-control-lg {
 }
 .form-control:focus {
   box-shadow: none;
-}
-
-.invalid-feedback {
-  font-weight: 300;
-}
-@media (max-width: 767.98px) {
-  .invalid-feedback {
-    font-size: 0.75rem;
-  }
 }
 
 .form-control.is-valid:focus,
@@ -11914,29 +11902,6 @@ textarea.form-control-lg {
 .form-control.is-valid:focus,
 .was-validated .form-control:valid:focus {
   border-color: transparent;
-}
-
-.invalid-feedback {
-  text-align: start;
-  padding-right: 3rem;
-  margin-top: 0.125rem;
-}
-
-.invalid-tooltip {
-  padding: 0.938rem 1.5rem;
-  background-color: #fd5732;
-  color: #FFFFFF;
-  font-size: 0.875rem;
-  border-radius: 0.188rem;
-  margin-top: 0.438rem;
-  top: initial;
-  bottom: calc(100% + 0.75rem);
-  right: calc(var(--bs-gutter-x) * 0.5);
-}
-@media (max-width: 767.98px) {
-  .invalid-tooltip {
-    font-size: 0.625rem;
-  }
 }
 
 .form-control.contact.is-invalid,
