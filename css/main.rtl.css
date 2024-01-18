@@ -11886,6 +11886,7 @@ textarea.form-control-lg {
 .form-control.is-invalid,
 .was-validated .form-control:invalid {
   background-image: none;
+  padding-left: 1rem;
 }
 
 .form-control.is-valid,
@@ -11907,16 +11908,20 @@ textarea.form-control-lg {
 .form-control.contact.is-invalid,
 .was-validated .form-control.contact:invalid {
   border: 2px solid #fd5732;
+  padding: 1.063rem 1rem;
 }
 
 .checkbox .form-check-input[type=checkbox] {
   border-radius: 0.188em;
 }
 
+.checkbox {
+  --bs-form-valid-color: #FFFFFF;
+}
 .checkbox .form-check-input {
   width: 1.25em;
   height: 1.25em;
-  border: none;
+  border-color: #FFFFFF;
 }
 
 .form-check-input:checked[type=checkbox] {
