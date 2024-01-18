@@ -7,6 +7,27 @@
     }
     &:focus {
         box-shadow: none;
+        border-color: $white;
+    }
+}
+
+.input-group-text {
+    font-weight: 500;
+    font-size: .875rem;
+    background-color: $white;
+    color: $gray;
+    &.divide {
+        &::after {
+            content: "";
+            display: inline;
+            width: .1rem;
+            height: 1.625rem;
+            background-color: #D9D9D9;
+            border-radius: .188rem;
+            position: absolute;
+            top: .688rem;
+            left: 3rem;
+        }
     }
 }
 
