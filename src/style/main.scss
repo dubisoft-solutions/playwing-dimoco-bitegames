@@ -83,6 +83,9 @@
                     font-weight: 500;
                     font-size: .75rem;
                     color: $white;
+                    &:hover {
+                        color: $green;
+                    }
                 }
             }
             .list-inline-item:last-child {
