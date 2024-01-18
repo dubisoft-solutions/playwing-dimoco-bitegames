@@ -1,5 +1,4 @@
 .form-control {
-    border: none;
     &::placeholder {
         font-weight: 400;
         font-style: italic;
@@ -8,13 +7,6 @@
     }
     &:focus {
         box-shadow: none;
-    }
-}
-
-.invalid-feedback {
-    font-weight: 300;
-    @include media-breakpoint-down(md) {
-        font-size: .75rem;
     }
 }
 
@@ -42,27 +34,6 @@
 .form-control.is-valid:focus,
 .was-validated .form-control:valid:focus {
     border-color: transparent;
-}
-
-.invalid-feedback {
-    text-align: start;
-    padding-left: 3rem;
-    margin-top: .125rem;
-}
-
-.invalid-tooltip {
-    padding: .938rem 1.5rem;
-    background-color: #fd5732;
-    color: $white;
-    font-size: .875rem;
-    border-radius: .188rem;
-    margin-top: .438rem;
-    @include media-breakpoint-down(md) {
-        font-size: .625rem;
-    }
-    top: initial;
-    bottom: calc(100% + 0.75rem);
-    left: calc(var(--bs-gutter-x) * .5);
 }
 
 .form-control.contact.is-invalid,
