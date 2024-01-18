@@ -11818,7 +11818,7 @@ textarea.form-control-lg {
   src: url("../fonts/IconsFont.eot");
   src: url("../fonts/IconsFont.eot?#iefix") format("eot"), url("../fonts/IconsFont.woff2") format("woff2"), url("../fonts/IconsFont.woff") format("woff"), url("../fonts/IconsFont.ttf") format("truetype"), url("../fonts/IconsFont.svg#IconsFont") format("svg");
 }
-.icon-plus:before, .icon-minus:before, .icon-checkbox:before {
+.icon-next:before, .icon-plus:before, .icon-minus:before, .icon-checkbox:before {
   font-family: "IconsFont";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11839,6 +11839,10 @@ textarea.form-control-lg {
 
 .icon-plus:before {
   content: "\e003";
+}
+
+.icon-next:before {
+  content: "\e004";
 }
 
 .btn {
@@ -12115,6 +12119,11 @@ p {
   transform-origin: 100% 0;
   -webkit-transform-origin: 100% 0;
   height: 8vh;
+}
+.main .icon-style {
+  background-color: #FFFFFF;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .main .footer {
   margin-top: auto;
