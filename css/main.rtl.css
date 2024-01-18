@@ -11907,7 +11907,6 @@ textarea.form-control-lg {
 .form-control.contact.is-invalid,
 .was-validated .form-control.contact:invalid {
   border: 2px solid #fd5732;
-  padding: 1.063rem 1rem;
 }
 
 .checkbox .form-check-input[type=checkbox] {
