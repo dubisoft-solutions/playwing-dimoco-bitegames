@@ -44,7 +44,15 @@
                         <p class="fw-bold mb-2">Wprowadż swój numer telefonu:</p>
 
                         <form method="get" action="pin.html" class="needs-validation" novalidate>
-                            <input type="tel" class="form-control text-center mb-3" id="inputPhone" placeholder="XXXXXXXXX" required>
+                            <input type="tel" 
+                                class="form-control text-center mb-3" 
+                                id="inputPhone" 
+                                placeholder="XXXXXXXXX" 
+                                minlength="9" 
+                                maxlength="9" 
+                                pattern="[0-9]*"
+                                required
+                            >
 
                             <div class="d-grid mb-3">
                                 <button type="submit" class="btn btn-success join-button">Dalej</button>
