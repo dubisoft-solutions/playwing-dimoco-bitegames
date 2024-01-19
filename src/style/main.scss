@@ -89,6 +89,12 @@
                     &:hover {
                         color: $green;
                     }
+                    @media (max-width: 375px) {
+                        font-size: .688rem;
+                    }
+                }
+                @media (max-width: 375px) {
+                    padding: 0 .25rem;
                 }
             }
             .list-inline-item:last-child {

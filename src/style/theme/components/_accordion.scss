@@ -23,6 +23,9 @@
             text-align: end;
         }
     }
+    &::after {
+        background-image: none;
+    }
 }
 
 .accordion-button:not(.collapsed) {
