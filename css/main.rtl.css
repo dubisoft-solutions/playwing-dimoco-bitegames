@@ -12150,6 +12150,16 @@ p {
 .main .footer .list-inline .list-inline-item .btn-link:hover {
   color: #00B262;
 }
+@media (max-width: 375px) {
+  .main .footer .list-inline .list-inline-item .btn-link {
+    font-size: 0.688rem;
+  }
+}
+@media (max-width: 375px) {
+  .main .footer .list-inline .list-inline-item {
+    padding: 0 0.25rem;
+  }
+}
 .main .footer .list-inline .list-inline-item:last-child {
   border-left: none;
 }
