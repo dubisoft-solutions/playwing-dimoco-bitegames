@@ -11993,6 +11993,9 @@ textarea.form-control-lg {
   content: "\e002";
   text-align: end;
 }
+.accordion-button::after {
+  background-image: none;
+}
 
 .accordion-button:not(.collapsed) {
   color: #FFFFFF;
